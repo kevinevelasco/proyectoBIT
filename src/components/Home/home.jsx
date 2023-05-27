@@ -1,13 +1,13 @@
-import React from 'react'
-
-const home = () => {
-  return ( //para tener más de un componente se genera un contenedor con <>
+import Navbar from "../Navbar/Navbar";
+import Slider from "../Slider/Slider";
+const Home = () => {
+    return (
   <>
-  
-     <div>home</div>
+  <Navbar/>
+  <Slider/>
   </>
- 
-  )
-}
+  );
+};
 
-export default home
+export default Home;
+  

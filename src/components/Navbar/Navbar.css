@@ -1,0 +1,62 @@
+.nav-container {
+    background-color: black;
+    color: white;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .navbar-logo {
+    margin-left: 20px;
+  }
+  
+  .navbar-carrito {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-menu > li {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .navbar-menu > li > a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    min-width: 120px;
+  }
+  
+  .submenu > li {
+    display: block;
+  }
+  
+  .submenu > li > a {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar-menu > li:hover .submenu {
+    display: block;
+  }
+  

@@ -1,0 +1,22 @@
+/* Footer.css */
+
+footer {
+    background-color: #000; 
+    color: #fff; 
+    padding: 20px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  footer a {
+    color: #fff; /* Enlaces blancos */
+    margin-left: 10px;
+  }
+  

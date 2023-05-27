@@ -6,7 +6,8 @@ const Navbar = () => {
     <section className='nav-container'>
       <nav className='navbar'>
         <h1 className='navbar-logo'>Solarte Store</h1>
-        <h2 className="navbar-carrito">🛒</h2>
+
+
         <ul className="navbar-menu">
           <li>
             <a href="#dama">Dama</a>
@@ -29,6 +30,11 @@ const Navbar = () => {
             </ul>
           </li>
         </ul>
+        <div className="navbar-search">
+          <input type="text" placeholder="Buscar..." />
+          <button className="search-button">Buscar</button>
+        </div>
+        <h2 className="navbar-carrito">🛒</h2>
       </nav>
     </section>
   );

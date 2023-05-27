@@ -1,0 +1,26 @@
+.caballero-section {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .caballero-section-1 {
+    flex: 2;
+  }
+  
+  .caballero-section-2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .image-container {
+    padding: 10px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  

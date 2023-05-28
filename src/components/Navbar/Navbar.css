@@ -1,10 +1,10 @@
 .nav-container {
   background-color: black;
   color: white;
-  position: fixed; /* Hace que el navbar se mantenga fijo */
-  top: 0; /* Coloca el navbar en la parte superior */
+  position: fixed;
+  top: 0;
   width: 100%;
-  z-index: 999; /* Asegura que el navbar esté en la parte superior */
+  z-index: 999;
 }
 
 .navbar {
@@ -62,4 +62,9 @@
 
 .navbar-menu > li:hover .submenu {
   display: block;
+}
+
+/* Agrega un margen superior a la siguiente sección igual a la altura del navbar */
+.next-section {
+  margin-top: 60px; /* Ajusta el valor según la altura de tu navbar */
 }

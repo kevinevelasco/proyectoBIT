@@ -14,9 +14,11 @@ const Home = () => {
   <>
   <Navbar/>
   <Slider/>
-  {/* <Products/> */}
   <Caballero/>
   <Dama/>
+  <div className = 'productCardContainer'>
+    <Products/> 
+  </div>
   <Contacto/>
   <Registro/>
   <Login/>

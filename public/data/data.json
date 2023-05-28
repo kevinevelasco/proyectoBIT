@@ -1,6 +1,7 @@
 [
 {
 "id":	1,
+"nombre":	"Tacones Daisy Negro",
 "tipo": 	"Formal",
 "genero": 	"Dama",
 "referencia": 13652,
@@ -12,6 +13,7 @@
 },
 {
 "id":	2,
+"nombre":	"Botin Amaranta Negro",
 "tipo": 	"Formal",
 "genero": 	"Dama",
 "referencia": 32512,
@@ -23,6 +25,7 @@
 },
 {
 "id":	3,
+"nombre":	"Tacones Allis Negro",
 "tipo": 	"Formal",
 "genero": 	"Dama",
 "referencia": 12364,
@@ -34,6 +37,7 @@
 },
 {
 "id":	4,
+"nombre":	"Tacones Morello Negro",
 "tipo": 	"Formal",
 "genero": 	"Dama",
 "referencia": 36412,
@@ -45,6 +49,7 @@
 },
 {
 "id":	5,
+"nombre":	"Zapatilla Ania Negro",
 "tipo": 	"Formal",
 "genero": 	"Dama",
 "referencia": 12354,
@@ -56,6 +61,7 @@
 },
 {
 "id":	6,
+"nombre":	"Tacones franz Vinotinto",
 "tipo": 	"Formal",
 "genero": 	"Dama",
 "referencia": 31152,
@@ -67,6 +73,7 @@
 },
 {
 "id":	7,
+"nombre":	"Zapatilla Dann Vinotinto",
 "tipo": 	"Formal",
 "genero": 	"Dama",
 "referencia": 12354,
@@ -78,6 +85,7 @@
 },
 {
 "id":	8,
+"nombre":	"Tacones Corell Cafes",
 "tipo": 	"Formal",
 "genero": 	"Dama",
 "referencia": 12652,
@@ -89,6 +97,7 @@
 },
 {
 "id":	9,
+"nombre":	"Nike SX Palo Rosa",
 "tipo": 	"Deportivo",
 "genero": 	"Dama",
 "referencia": 32152,
@@ -100,6 +109,7 @@
 },
 {
 "id":	10,
+"nombre":	"Nike F2X Dorado",
 "tipo": 	"Deportivo",
 "genero": 	"Dama",
 "referencia": 12584,
@@ -111,6 +121,7 @@
 },
 {
 "id":	11,
+"nombre":	"Nike DTS Fucsia",
 "tipo": 	"Deportivo",
 "genero": 	"Dama",
 "referencia": 12344,
@@ -122,6 +133,7 @@
 },
 {
 "id":	12,
+"nombre":	"Nike MC3 Palo Rosa",
 "tipo": 	"Deportivo",
 "genero": 	"Dama",
 "referencia": 42453,
@@ -133,6 +145,7 @@
 },
 {
 "id":	13,
+"nombre":	"Fila XWX Salmon",
 "tipo": 	"Deportivo",
 "genero": 	"Dama",
 "referencia": 53214,
@@ -144,6 +157,7 @@
 },
 {
 "id":	14,
+"nombre":	"Xtreme V33 Gris",
 "tipo": 	"Deportivo",
 "genero": 	"Dama",
 "referencia": 43421,
@@ -156,6 +170,7 @@
 {
 "id":	15,
 "tipo": 	"Deportivo",
+"nombre":	"Nike P00 Bicolor",
 "genero": 	"Dama",
 "referencia": 42134,
 "precio": 92950,
@@ -166,6 +181,7 @@
 },
 {
 "id":	16,
+"nombre":	"Olimpia ZMN Gris",
 "tipo": 	"Deportivo",
 "genero": 	"Dama",
 "referencia": 13434,
@@ -178,6 +194,7 @@
 
 {
 "id":	17,
+"nombre":	"Zapato Mosvel Miel",
 "tipo": 	"Formal",
 "genero": 	"Caballero",
 "referencia": 13652,
@@ -189,6 +206,7 @@
 },
 {
 "id":	18,
+"nombre":	"Oxford Vento Cafe",
 "tipo": 	"Formal",
 "genero": 	"Caballero",
 "referencia": 32512,
@@ -200,6 +218,7 @@
 },
 {
 "id":	19,
+"nombre":	"Oxford Frelz Negro",
 "tipo": 	"Formal",
 "genero": 	"Caballero",
 "referencia": 12364,
@@ -211,6 +230,7 @@
 },
 {
 "id":	20,
+"nombre":	"Derbi Grand Cafe ",
 "tipo": 	"Formal",
 "genero": 	"Caballero",
 "referencia": 364212,
@@ -222,6 +242,7 @@
 },
 {
 "id":	21,
+"nombre":	"Derbi Bota M-3 Gris ",
 "tipo": 	"Formal",
 "genero": 	"Caballero",
 "referencia": 123524,
@@ -233,6 +254,7 @@
 },
 {
 "id":	22,
+"nombre":	"Derbi Bota V-2 Cafe",
 "tipo": 	"Formal",
 "genero": 	"Caballero",
 "referencia": 311252,
@@ -244,6 +266,7 @@
 },
 {
 "id":	23,
+"nombre":	"Nautic Class Cafe",
 "tipo": 	"Formal",
 "genero": 	"Caballero",
 "referencia": 123524,
@@ -255,6 +278,7 @@
 },
 {
 "id":	24,
+"nombre":	"Zapato Tils Miel",
 "tipo": 	"Formal",
 "genero": 	"Caballero",
 "referencia": 126252,
@@ -266,6 +290,7 @@
 },
 {
 "id":	25,
+"nombre":	"Under Armour 3-3M Negros",
 "tipo": 	"Deportivo",
 "genero": 	"Caballero",
 "referencia": 322152,
@@ -277,6 +302,7 @@
 },
 {
 "id":	26,
+"nombre":	"Under Armour HoVR Negros",
 "tipo": 	"Deportivo",
 "genero": 	"Caballero",
 "referencia": 125284,
@@ -288,6 +314,7 @@
 },
 {
 "id":	27,
+"nombre":	"Under Armour 2650 Azul",
 "tipo": 	"Deportivo",
 "genero": 	"Caballero",
 "referencia": 121344,
@@ -299,6 +326,7 @@
 },
 {
 "id":	28,
+"nombre":	"Under Armour MJ Blancos",
 "tipo": 	"Deportivo",
 "genero": 	"Caballero",
 "referencia": 421453,
@@ -310,6 +338,7 @@
 },
 {
 "id":	29,
+"nombre":	"Nike XR Negros",
 "tipo": 	"Deportivo",
 "genero": 	"Caballero",
 "referencia": 532114,
@@ -321,6 +350,7 @@
 },
 {
 "id":	30,
+"nombre":	"Nike Clasic Negros",
 "tipo": 	"Deportivo",
 "genero": 	"Caballero",
 "referencia": 434211,
@@ -332,6 +362,7 @@
 },
 {
 "id":	31,
+"nombre":	"Nike Supp Negros",
 "tipo": 	"Deportivo",
 "genero": 	"Caballero",
 "referencia": 421134,
@@ -343,6 +374,7 @@
 },
 {
 "id":	32,
+"nombre":	"Nike Zoom-X Negros",
 "tipo": 	"Deportivo",
 "genero": 	"Caballero",
 "referencia": 134314,

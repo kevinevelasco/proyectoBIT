@@ -13,7 +13,8 @@ const Products = () => {
     return (
       <div className="card" key={product.id}>
         <img src={product.img} alt="img-product" />
-        <h3>{product.tipo}</h3>
+        <h3>{product.nombre}</h3>
+        <h4>{product.tipo}</h4>
         <h4>{product.genero}</h4>
         <button onClick={() => buyProducts (product)}>Comprar</button>
       </div>

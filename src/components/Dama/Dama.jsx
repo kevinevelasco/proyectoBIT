@@ -1,11 +1,10 @@
 import React from 'react'
 import './Dama.css'
 
-import React from 'react'
 
 const Dama = () => {
   return (
-    <div> Todos los productos de Dama (detortivo + formal)</div>
+    <div>Dama</div>
   )
 }
 

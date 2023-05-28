@@ -1,7 +1,6 @@
 import React from 'react';
 import './Caballero.css';
 
-import React from 'react'
 
 const Caballero = () => {
   return (

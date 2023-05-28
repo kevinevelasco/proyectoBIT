@@ -7,6 +7,7 @@ const Products = () => {
 
   const buyProducts = (product) => {
     console.log(product);
+    setCart([...cart,product]);
   };
 
   return data.map((product) => {

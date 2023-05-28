@@ -14,7 +14,7 @@ const Home = () => {
   <>
   <Navbar/>
   <Slider/>
-  {/* <Products/> */}
+  <Products/> 
   <Caballero/>
   <Dama/>
   <Contacto/>

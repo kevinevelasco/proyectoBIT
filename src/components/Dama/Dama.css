@@ -1,11 +1,13 @@
 .dama-section {
     display: flex;
     align-items: flex-start;
+    margin-top: 10px; /* Márgen superior */
+    margin-right: 60px; /* Márgen derecho */
+    margin-bottom: 10px; /* Márgen inferior */
+    margin-left: 60px; /* Márgen izquierdo */
   }
   
-  .dama-section-1 {
-    flex: 2;
-  }
+
   
   .dama-section-2 {
     flex: 1;
@@ -21,5 +23,21 @@
   .image-container img {
     width: 100%;
     height: auto;
-  }
+    }
   
+  
+  #imagen-1{
+    width: 500px;
+    height: 600px;
+  
+  }
+
+  #imagen-2{
+    width: 500px;
+    height: 283px;
+  }
+
+  #imagen-3{
+    width: 500px;
+    height: 283px;
+  }

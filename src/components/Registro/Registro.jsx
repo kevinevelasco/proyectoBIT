@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
+import './Registro.css'
 
 const Registro = () => {
   const [nombre, setNombre] = useState('');
@@ -21,7 +24,10 @@ const Registro = () => {
   };
 
   return (
-    <section className='Formulario-registro'>
+    <main className='seccion-registro'>
+      <Navbar/>
+      <Footer/>
+      <section className='Formulario-registro'>
       <h2>Registro</h2>
       <form onSubmit={handleSubmit}>
         <article className='formulario-registro-div'>
@@ -72,6 +78,7 @@ const Registro = () => {
         <button type="submit">Registrar</button>
       </form>
     </section>
+    </main>
   );
 };
 

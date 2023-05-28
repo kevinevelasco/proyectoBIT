@@ -1,70 +1,83 @@
 .nav-container {
-  background-color: black;
-  color: white;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 999;
+  background-color: #000;
+  color: #fff;
 }
 
 .navbar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  align-items: center;
+  padding: 20px;
 }
 
 .navbar-logo {
-  margin-left: 20px;
-}
-
-.navbar-carrito {
-  margin-left: auto;
-  margin-right: 20px;
+  margin: 0;
 }
 
 .navbar-menu {
   list-style: none;
+  display: flex;
   margin: 0;
   padding: 0;
 }
 
-.navbar-menu > li {
-  display: inline-block;
+.navbar-menu li {
   position: relative;
 }
 
-.navbar-menu > li > a {
-  display: block;
-  padding: 10px 20px;
-  color: white;
+.navbar-menu a {
+  color: #fff;
   text-decoration: none;
+  padding: 10px;
 }
 
 .submenu {
-  display: none;
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: black;
-  min-width: 120px;
+  background-color: #000;
+  display: none;
+  padding: 10px;
 }
 
-.submenu > li {
+.submenu li {
+  margin-bottom: 5px;
+}
+
+.navbar-menu li:hover .submenu {
   display: block;
 }
 
-.submenu > li > a {
-  padding: 10px 20px;
-  color: white;
+.navbar-auth {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-auth a {
+  color: #fff;
   text-decoration: none;
+  margin-left: 10px;
 }
 
-.navbar-menu > li:hover .submenu {
-  display: block;
+.navbar-search {
+  display: flex;
+  align-items: center;
 }
 
-/* Agrega un margen superior a la siguiente sección igual a la altura del navbar */
-.next-section {
-  margin-top: 60px; /* Ajusta el valor según la altura de tu navbar */
+.navbar-search input[type="text"] {
+  padding: 5px;
+}
+
+.search-button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+.navbar-carrito {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
 }

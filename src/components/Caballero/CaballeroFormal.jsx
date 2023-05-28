@@ -1,9 +1,15 @@
 import React from 'react'
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 import './Caballero.css'
 
 const CaballeroFormal = () => {
   return (
-    <div> Productos CaballeroFormal</div>
+    <main className='seccion-caballero-formal'>
+      <Navbar/>
+      <Footer/>
+       Productos CaballeroFormal
+    </main>
   )
 }
 

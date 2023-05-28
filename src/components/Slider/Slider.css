@@ -1,8 +1,7 @@
 .slider-container {
   position: relative;
-  width: 100%;
+  width: 110%;
   height: 100%;
-  overflow: hidden;/* Agregamos un borde negro al contenedor */
   margin-top: 0px; /* Agrega un espacio de 20px en la parte superior */
 }
 .slider {
@@ -11,7 +10,7 @@
   justify-content: center;
   align-items: center;
   height: 300px; 
-  margin-top:120px ;
+  margin-top:30px ;
 }
 
 .slider-image {

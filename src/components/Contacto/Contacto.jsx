@@ -1,10 +1,15 @@
 import React from 'react';
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 import './Contacto.css'
 
 const Contacto = () => {
   return (
-    <>
-      <h2>Contacto</h2>
+    <main className='seccion-contacto'>
+      <Navbar/>
+      <Footer/>
+     <section>
+     <h2>Contacto</h2>
       <form>
         <fieldset>
           <legend>Información de contacto</legend>
@@ -27,7 +32,8 @@ const Contacto = () => {
         </fieldset>
         <button type="submit">Enviar</button>
       </form>
-    </>
+     </section>
+    </main>
   );
 }
 

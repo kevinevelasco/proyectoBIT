@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
+import './Login.css'
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -12,7 +15,10 @@ const Login = () => {
   };
 
   return (
-    <section className="login-container">
+   <main className='seccion-login'>
+    <Navbar/>
+    <Footer/>
+     <section className="login-container">
       <h2>Iniciar sesión</h2>
       <form onSubmit={handleSubmit}>
         <article className='login-container-div'>
@@ -38,6 +44,7 @@ const Login = () => {
         <button type="submit">Iniciar sesión</button>
       </form>
     </section>
+   </main>
   );
 };
 

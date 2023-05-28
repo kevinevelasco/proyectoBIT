@@ -1,45 +1,63 @@
-form {
-    max-width: 400px;
-    margin: 0 ;
-  }
-  
-  fieldset {
-    border: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  legend {
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 0.5rem;
-  }
-  
-  input,
-  textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button[type="submit"] {
-    display: block;
-    width: 100%;
-    padding: 0.5rem;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #0056b3;
-  }
-  
+.seccion-contacto {
+  background-color: #f8f8f8;
+  color: #000;
+  min-height: 100vh;
+}
+
+.seccion-contacto h2 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.seccion-contacto form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.seccion-contacto fieldset {
+  border: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.seccion-contacto legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.seccion-contacto label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.seccion-contacto input,
+.seccion-contacto textarea {
+  padding: 5px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.seccion-contacto button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.seccion-contacto button:hover {
+  background-color: #3367d6;
+}

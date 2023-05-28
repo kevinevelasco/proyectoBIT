@@ -14,7 +14,6 @@ const Home = () => {
   <>
   <Navbar/>
   <Slider/>
-  <Products/> 
   <Caballero/>
   <Dama/>
   <div className = 'productCardContainer'>

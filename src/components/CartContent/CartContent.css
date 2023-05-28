@@ -13,3 +13,7 @@
 .cartTotal{
   text-align: center;
 }
+.cartEmptyMess{
+  text-align: center;
+  margin-top: 60px;
+}

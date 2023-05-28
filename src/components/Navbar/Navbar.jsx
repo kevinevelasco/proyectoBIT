@@ -1,5 +1,6 @@
 import React from 'react';
 import './Navbar.css';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -34,7 +35,7 @@ const Navbar = () => {
           <input type="text" placeholder="Buscar..." />
           <button className="search-button">Buscar</button>
         </div>
-        <h2 className="navbar-carrito">🛒</h2>
+        <Link className="navbar-carrito" to={"/cart"}>🛒</Link>
       </nav>
     </section>
   );

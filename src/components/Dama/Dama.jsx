@@ -1,7 +1,18 @@
 import React from 'react'
 import './Dama.css'
 
-export const Dama = () => {
+import React from 'react'
+
+const Dama = () => {
+  return (
+    <div> Todos los productos de Dama (detortivo + formal)</div>
+  )
+}
+
+export default Dama
+
+
+/*export const Dama = () => {
   return  (
     <main className="dama-section">
       <section className='dama-section-1'>
@@ -19,4 +30,4 @@ export const Dama = () => {
      </section>
     </main>
   );
-}
+}*/

@@ -1,7 +1,17 @@
 import React from 'react';
 import './Caballero.css';
 
+import React from 'react'
+
 const Caballero = () => {
+  return (
+    <div> Todos los productos de Caballero independiente al tipo de calzado (deportivo + formal)</div>
+  )
+}
+
+export default Caballero
+
+/*const Caballero = () => {
   return (
     <main className="caballero-section">
       <section className='caballero-section-1'>
@@ -21,4 +31,4 @@ const Caballero = () => {
   );
 };
 
-export default Caballero;
+export default Caballero;*/

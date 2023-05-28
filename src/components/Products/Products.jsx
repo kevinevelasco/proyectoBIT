@@ -5,8 +5,8 @@ import axios from "axios";
 const Products = () => {
   const { data, cart, setCart } = useContext(dataContext);
 
-  const buyProducts = () => {
-    console.log('Me compraste');
+  const buyProducts = (product) => {
+    console.log(product);
   };
 
   return data.map((product) => {
@@ -15,7 +15,7 @@ const Products = () => {
         <img src={product.img} alt="img-product" />
         <h3>{product.tipo}</h3>
         <h4>{product.genero}</h4>
-        <button onClick={buyProducts}>Comprar</button>
+        <button onClick={() => buyProducts (product)}>Comprar</button>
       </div>
     );
   });

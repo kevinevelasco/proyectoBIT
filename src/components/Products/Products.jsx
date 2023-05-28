@@ -3,14 +3,20 @@ import { dataContext } from "../Context/DataContext";
 import axios from "axios";
 
 const Products = () => {
-  const { data } = useContext(dataContext);
+  const { data, cart, setCart } = useContext(dataContext);
+
+  const buyProducts = (product) => {
+    console.log(product);
+  };
+
   return data.map((product) => {
     return (
       <div className="card" key={product.id}>
         <img src={product.img} alt="img-product" />
-        <h3>{product.tipo}</h3>
+        <h3>{product.nombre}</h3>
+        <h4>{product.tipo}</h4>
         <h4>{product.genero}</h4>
-        <button>Comprar</button>
+        <button onClick={() => buyProducts (product)}>Comprar</button>
       </div>
     );
   });

@@ -14,7 +14,7 @@ const Home = () => {
   <>
   <Navbar/>
   <Slider/>
-  <Products/>  
+  <Products tipo={"Formal"} genero={"Caballero"} limit={4}/>  
   <Caballero/>
   <Dama/>
   <div className = 'productCardContainer'>

@@ -1,5 +1,7 @@
 import React from 'react'
 import { useContext } from "react";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 import { dataContext } from "../Context/DataContext";
 
 import CartElements from './CartElements';
@@ -12,6 +14,8 @@ const CartContent = () => {
 
   return cart.length > 0 ? (
     <>
+    <Navbar/>
+    <Footer/>
     <CartElements />;
     <CartTotal />;
   </>  

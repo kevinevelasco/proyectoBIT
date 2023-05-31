@@ -1,7 +1,7 @@
 footer {
   position: fixed;
-  background-color: #000; 
-  color: #fff; 
+  background-color: #000;
+  color: #fff;
   padding: 20px;
   left: 0;
   bottom: 0;
@@ -17,4 +17,16 @@ footer section {
 footer a {
   color: #fff; /* Enlaces blancos */
   margin-left: 10px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  footer section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  footer a {
+    margin: 10px 0;
+  }
 }

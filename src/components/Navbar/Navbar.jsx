@@ -10,27 +10,33 @@ const Navbar = () => {
 
         <ul className="navbar-menu">
           <li>
-            <a href="#dama">Dama</a>
+            <Link to={"/dama-completo"}>
+              <a href="#dama">Dama</a>
+            </Link>
             <ul className="submenu">
               <li><Link to={"/dama-formal"}>Formal</Link></li>
               <li><Link to={"/dama-deportivo"}>Deportivo</Link></li>
             </ul>
           </li>
           <li>
-            <a href="#caballero">Caballero</a>
+            <Link to={"/caballero-completo"}>
+              <a href="#caballero">Caballero</a>
+            </Link>
             <ul className="submenu">
               <li><Link to={"/caballero-formal"}>Formal</Link></li>
               <li><Link to={"/caballero-deportivo"}>Deportivo</Link></li>
             </ul>
           </li>
           <li>
-            <a href="#contacto">Contacto</a>
+            <Link to={"/contacto"}>
+              <a href="#contacto">Contacto</a>
+            </Link>
             <ul className="submenu">
               <li><Link to={"/contacto"}>Formulario</Link></li>
             </ul>
           </li>
         </ul>
-        
+
         <div className="navbar-auth">
           <Link className="navbar-login" to={"/login"}>Login</Link>
           <Link className="navbar-register" to={"/registro"}>Registro</Link>

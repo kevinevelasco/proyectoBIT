@@ -7,7 +7,7 @@ const Caballero = () => {
     <main className="caballero-section">
       <section className='caballero-section-1'>
       <article className="image-container">
-          <Link to={"/"} >
+          <Link to={"/caballero-completo"} >
           <img src="/assets/caballero.jpeg" alt="Imagen-1" id='imagen-1' />
           </Link>
         </article>

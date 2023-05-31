@@ -7,7 +7,7 @@ export const Dama = () => {
     <main className="dama-section">
       <section className='dama-section-1'>
       <article className="image-container">
-          <Link to= {"/"}>
+          <Link to= {"/dama-completo"}>
             <img src="/assets/dama.jpeg" alt="Imagen-1" id='imagen-1'/>
           </Link>
         </article>

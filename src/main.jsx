@@ -13,6 +13,9 @@ import CaballeroFormal from './components/Caballero/CaballeroFormal';
 import Registro from './components/Registro/Registro';
 import Login from './components/Login/Login';
 import Contacto from './components/Contacto/Contacto';
+import { DamaCompleto } from './components/Dama/DamaCompleto';
+import { CaballeroCompleto } from './components/Caballero/CaballeroCompleto';
+
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -30,6 +33,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='/registro' element={<Registro/>}/>
           <Route path='/login' element={<Login />}/>
           <Route path='/contacto' element={<Contacto/>}/>
+          <Route path='/dama-completo' element={<DamaCompleto/>}/>
+          <Route path='/caballero-completo' element={<CaballeroCompleto/>}/>
+
+          
 
 
       </Routes>

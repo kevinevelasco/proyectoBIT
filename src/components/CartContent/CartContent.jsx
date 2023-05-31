@@ -20,7 +20,11 @@ const CartContent = () => {
     <CartTotal />;
   </>  
   ): (
+    <section>
+      <Navbar/>
+    <Footer/>
     <h2 className='cartEmptyMess'>No hay productos en el carrito</h2>
+    </section>
   ) 
 };
 

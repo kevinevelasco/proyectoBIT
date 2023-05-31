@@ -18,7 +18,7 @@ const Home = () => {
   <Caballero/>
   <Dama/>
   <div className = 'productCardContainer'>
-    <Products/> 
+   <Products/> 
   </div> 
   <Footer/>
   </>

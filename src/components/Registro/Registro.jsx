@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; // Importa el componente Link desde React Router
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import './Registro.css'
@@ -26,7 +27,7 @@ const Registro = () => {
   return (
     <main className='seccion-registro'>
       <Navbar/>
-      <Footer/>
+  
       <section className='Formulario-registro'>
       <h2>Registro</h2>
       <form onSubmit={handleSubmit}>
@@ -77,7 +78,9 @@ const Registro = () => {
         </article>
         <button type="submit">Registrar</button>
       </form>
+      <p>¿Ya tienes una cuenta? <Link className="navbar-login" to={"/login"}>Login</Link></p> {/* Agrega el enlace de inicio de sesión */}
     </section>
+    <Footer/>
     </main>
   );
 };

@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { dataContext } from "../Context/DataContext";
+import './Products.css'
 import axios from "axios";
 
 const Products = ({ tipo, genero, limit}) => {

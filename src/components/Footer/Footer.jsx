@@ -4,7 +4,7 @@ import './Footer.css'
 const Footer = () => {
   return (
     <footer>
-      <section>
+      <section className='footer'>
         <div>
           Síguenos en redes sociales:
           <a href="https://www.instagram.com/solartestore/" target="_blank" rel="noopener noreferrer">Instagram</a>

@@ -4,3 +4,9 @@
   box-sizing: border-box;
   margin-top: 0px;
 }
+
+footer {
+  position: relative;
+  margin-top: auto;
+}
+

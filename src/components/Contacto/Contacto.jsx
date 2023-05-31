@@ -7,8 +7,6 @@ const Contacto = () => {
   return (
     <main className='seccion-contacto'>
       <Navbar/>
-      <Footer/>
-     <section>
      <h2>Contacto</h2>
       <form>
         <fieldset>
@@ -32,8 +30,10 @@ const Contacto = () => {
         </fieldset>
         <button type="submit">Enviar</button>
       </form>
-     </section>
+     
+      <Footer/>
     </main>
+    
   );
 }
 

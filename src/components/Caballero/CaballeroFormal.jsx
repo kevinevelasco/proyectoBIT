@@ -6,12 +6,15 @@ import Products from '../Products/Products';
 
 const CaballeroFormal = () => {
   return (
-    <main className='seccion-caballero-formal'>
+    <section>
+      <main className='seccion-caballero-formal'>
       <Navbar/>
-      <Footer/>
+    
        Productos CaballeroFormal
        <Products genero="Caballero" tipo="Formal"></Products>
+       <Footer/>
     </main>
+    </section>
   )
 }
 

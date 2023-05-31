@@ -6,14 +6,13 @@ import Products from '../Products/Products';
 
 export const CaballeroCompleto = () => {
   return (
-    <section>
+    <section >
         <Navbar/>
-      <Footer/>
+      
        Productos Caballero Completos
        <Products genero="Caballero" tipo="Deportivo"></Products>
        <Products genero="Caballero" tipo="Formal"></Products>
-
-        
+       <Footer/>
     </section>
   )
 }

@@ -1,7 +1,8 @@
 import React from 'react'
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
-import './Caballero.css'
+import './Caballero.css';
+import Products from '../Products/Products';
 
 const CaballeroFormal = () => {
   return (
@@ -9,6 +10,7 @@ const CaballeroFormal = () => {
       <Navbar/>
       <Footer/>
        Productos CaballeroFormal
+       <Products genero="Caballero" tipo="Formal"></Products>
     </main>
   )
 }

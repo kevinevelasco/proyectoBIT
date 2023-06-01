@@ -1,8 +1,11 @@
 import React from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { dataContext } from '../Context/DataContext';
 
 const Navbar = () => {
+  const { loggedInUser } = useContext(dataContext);
   return (
     <section className='nav-container'>
       <nav className='navbar'>
@@ -36,16 +39,21 @@ const Navbar = () => {
             </ul>
           </li>
         </ul>
-
-        <div className="navbar-auth">
-          <Link className="navbar-login" to={"/login"}>Login</Link>
-          <Link className="navbar-register" to={"/registro"}>Registro</Link>
-        </div>
-        <div className="navbar-search">
-          <input type="text" placeholder="Buscar..." />
-          <button className="search-button">Buscar</button>
-        </div>
-        <Link className="navbar-carrito" to={"/cart"}>🛒</Link>
+        {!loggedInUser && (
+          <>
+            <div className="navbar-auth">
+              <Link className="navbar-login" to={"/login"}>Login</Link>
+              <Link className="navbar-register" to={"/registro"}>Registro</Link>
+            </div>
+            <div className="navbar-search">
+              <input type="text" placeholder="Buscar..." />
+              <button className="search-button">Buscar</button>
+            </div>
+          </>)
+        }
+        {loggedInUser && (
+          <Link className="navbar-carrito" to={"/cart"}>🛒</Link>
+        )}
       </nav>
     </section>
   );

@@ -10,6 +10,10 @@
   padding: 20px;
 }
 
+.navbar a{
+  text-decoration: none;
+}
+
 .navbar-logo {
   margin: 0;
 }

@@ -5,10 +5,14 @@ import axios from "axios";
 
 const Products = ({ tipo, genero, limit}) => {
   const { data, cart, setCart } = useContext(dataContext);
-
+  const { loggedInUser } = useContext(dataContext); 
   const buyProducts = (product) => {
-    console.log(product);
-    setCart([...cart, product]);
+    if (loggedInUser) {
+      console.log(product);
+      setCart([...cart, product]);
+    } else {
+      alert('Debes iniciar sesión para comprar');
+    }
   };
 
   const filteredProducts = data.filter((product) => product.tipo === tipo && product.genero === genero);

@@ -13,6 +13,15 @@ const Products = ({ tipo, genero, limit}) => {
     } else {
       alert('Debes iniciar sesión para comprar');
     }
+    
+    //variable para almacenar que producto se esta repitiendo
+    const productRepeat = cart.find((item) => item.id === product.id);
+
+    if(productRepeat){
+      setCart(cart.map((item) => (item.id === product.id ? {...product, cantidad: productRepeat.cantidad + 1} : item )));
+    } else {
+      setCart([...cart, product]);
+    }
   };
 
   const filteredProducts = data.filter((product) => product.tipo === tipo && product.genero === genero);

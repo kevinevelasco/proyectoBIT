@@ -109,13 +109,13 @@
 },
 {
 "id":	10,
-"nombre":	"Nike F2X Dorado",
+"nombre":	"Nike F2X Rosa",
 "tipo": 	"Deportivo",
 "genero": 	"Dama",
 "referencia": 12584,
 "precio": 85950,
 "descripcion": 	"Suela Resistente al Deslizamiento en goma, su altura es de 3/5, fabricado con una parte superior de tejido Donato que se asemeja a la ante, se pueden limpiar con agua y detergente suave",
-"img": 	"https://i.pinimg.com/564x/d4/19/d9/d419d965ec2ed86e5074995ee09385d9.jpg",
+"img": 	"https://i.pinimg.com/564x/21/d1/df/21d1df16aed00dd4c5e9b0a54e3ce510.jpg",
 "tallas":	 [34, 35, 36, 37, 38, 39],
 "cantidad":	1
 },
@@ -212,7 +212,7 @@
 "referencia": 32512,
 "precio": 89500,
 "descripcion": 	"Suela Resistente al Deslizamiento en goma, su altura es de 3/5, fabricado con una parte superior de tejido Donato que se asemeja a la ante, se pueden limpiar con agua y detergente suave",
-"img": 	"https://i.pinimg.com/564x/26/87/8b/26878bb7b5b0bb95273b157ab29f0d1f.jpg",
+"img": 	"https://i.pinimg.com/564x/f9/ba/14/f9ba14f096c879a530bb5347308bcbac.jpg",
 "tallas":	 [34, 35, 36, 37, 38, 39, 40, 41, 42, 43],
 "cantidad":	1
 },

@@ -1,6 +1,7 @@
 .dama-section {
   display: flex;
   align-items: flex-start;
+  justify-content: center;
   margin-top: 10px; /* Márgen superior */
   margin-right: 60px; /* Márgen derecho */
   margin-bottom: 10px; /* Márgen inferior */
@@ -12,6 +13,9 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+.parrafo{
+  color: black;
 }
 
 .image-container {

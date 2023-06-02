@@ -25,6 +25,7 @@ const Slider = () => {
           src="/assets/slider2.png"
           alt='Imagen 2'
         />
+        
         <button className='slider-button prev' onClick={handlePreviousSlide}>
           ⏮
         </button>

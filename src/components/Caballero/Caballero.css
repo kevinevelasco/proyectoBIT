@@ -1,10 +1,10 @@
 .caballero-section {
   display: flex;
   align-items: flex-start;
-  margin-top: 10px; /* Márgen superior */
-  margin-right: 60px; /* Márgen derecho */
-  margin-bottom: 10px; /* Márgen inferior */
-  margin-left: 60px; /* Márgen izquierdo */
+  margin-top: 10px;
+  margin-right: 60px;
+  margin-bottom: 10px;
+  margin-left: 60px;
 }
 
 .caballero-section-2 {
@@ -15,6 +15,7 @@
 }
 
 .image-container {
+  position: relative;
   padding: 10px;
 }
 
@@ -38,7 +39,19 @@
   height: 283px;
 }
 
+.image-container button {
+  position: absolute;
+  bottom: 30px; /* Ajusta el valor  */
+  left: 20px; /* Ajusta el valor  */
+}
 
+.image-container p {
+  position: absolute;
+  top: 10px; /* Ajusta el valor */
+  left: 20px; /* Ajusta el valor */
+  color: white;
+  font-size: 24px;
+}
 
 /* Responsiveness */
 @media (max-width: 768px) {

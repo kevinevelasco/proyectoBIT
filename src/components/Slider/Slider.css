@@ -4,6 +4,10 @@
   height: 100%;
   margin-top: 20px;
   overflow: hidden;
+  margin-top: 80px; /* Márgen superior */
+  margin-right: 0px; /* Márgen derecho */
+  margin-bottom: 120px; /* Márgen inferior */
+  margin-left: 0px; /* Márgen izquierdo */
 }
 
 .slider {
@@ -11,7 +15,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300px;
+  height: 500px;
   margin-top: 30px;
   transition: transform 0.5s ease-in-out;
 }

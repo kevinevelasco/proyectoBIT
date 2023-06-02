@@ -53,7 +53,7 @@ const Navbar = () => {
   return (
     <section className='nav-container'>
       <nav className='navbar'>
-        <h1 className='navbar-logo'><Link to={"/"}>Solarte Store</Link></h1>
+      <h1 className='navbar-logo'><Link to={"/"}>Solarte Store</Link></h1>
 
         <ul className="navbar-menu">
           <li>

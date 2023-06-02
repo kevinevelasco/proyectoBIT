@@ -7,6 +7,7 @@ import Contacto from "../Contacto/Contacto";
 import Registro from "../Registro/Registro";
 import Login from "../Login/Login";
 import Footer from "../Footer/Footer";
+import './home.css'
 
 
 
@@ -15,7 +16,8 @@ const Home = () => {
   <>
   <Navbar/>
   <Slider/>
-  <Products tipo={"Formal"} genero={"Caballero"} limit={4}/>  
+  <h1>Productos Más Vendidos</h1>
+  < Products tipo={"Formal"} genero={"Caballero"} limit={4}/>  
   <Caballero/>
   <Dama/>
   <div className = 'productCardContainer'>

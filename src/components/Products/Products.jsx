@@ -3,25 +3,8 @@ import { dataContext } from "../Context/DataContext";
 import './Products.css'
 
 const Products = ({ tipo, genero, limit}) => {
-  const { data, cart, setCart } = useContext(dataContext);
+  const { data, buyProducts } = useContext(dataContext);
   const { loggedInUser } = useContext(dataContext); 
-  const buyProducts = (product) => {
-    if (loggedInUser) {
-      console.log(product);
-      setCart([...cart, product]);
-    } else {
-      alert('Debes iniciar sesión para comprar');
-    }
-    
-    //variable para almacenar que producto se esta repitiendo
-    const productRepeat = cart.find((item) => item.id === product.id);
-
-    if(productRepeat){
-      setCart(cart.map((item) => (item.id === product.id ? {...product, cantidad: productRepeat.cantidad + 1} : item )));
-    } else {
-      setCart([...cart, product]);
-    }
-  };
 
   const filteredProducts = data.filter((product) => product.tipo === tipo && product.genero === genero);
 

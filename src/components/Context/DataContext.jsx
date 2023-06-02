@@ -15,9 +15,27 @@ const DataProvider = ({ children }) => {
       .then(response => response.json())
       .then(data => setUsersData(data))
       .catch(error => console.error('Error al obtener los datos de la API:', error));
-  }, []);   
+  }, []);  
+  
+  const buyProducts = (product) => {
+    if (loggedInUser) {
+      console.log(product);
+      setCart([...cart, product]);
+    } else {
+      alert('Debes iniciar sesión para comprar');
+    }
+    
+    //variable para almacenar que producto se esta repitiendo
+    const productRepeat = cart.find((item) => item.id === product.id);
 
-  return <dataContext.Provider value={{ data, usersData, setUsersData, loggedInUser, setLoggedInUser, cart, setCart }}>{children}</dataContext.Provider>;
+    if(productRepeat){
+      setCart(cart.map((item) => (item.id === product.id ? {...product, cantidad: productRepeat.cantidad + 1} : item )));
+    } else {
+      setCart([...cart, product]);
+    }
+  };
+
+  return <dataContext.Provider value={{ data, usersData, setUsersData, loggedInUser, setLoggedInUser, cart, setCart, buyProducts}}>{children}</dataContext.Provider>;
 };
 
 export default DataProvider;

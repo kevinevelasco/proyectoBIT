@@ -10,7 +10,7 @@ const { cart } = useContext(dataContext);
       <div className="cartContent" key={product.id}>
         <img src={product.img} alt="productCard"/>
         <h3 className="name">{product.nombre}</h3>
-        <CartItemCounter cantidad = {product.cantidad}/>
+        <CartItemCounter producto = {product}/>
         <h4 className="price">$ {product.precio}  </h4>
       </div>
     )

@@ -1,11 +1,19 @@
 import React from 'react';
 import './Navbar.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
 import { dataContext } from '../Context/DataContext';
 
 const Navbar = () => {
-  const { loggedInUser } = useContext(dataContext);
+  const { loggedInUser, setLoggedInUser } = useContext(dataContext);
+  const navigate = useNavigate();
+  const handleLogout = () => {
+    // Actualizar la variable loggedInUser a false
+    setLoggedInUser(false);
+    
+    // Recargar la página para ir al inicio (home)
+    navigate('/'); // Redirecciona a la página principal
+  };
   return (
     <section className='nav-container'>
       <nav className='navbar'>
@@ -52,8 +60,10 @@ const Navbar = () => {
           </>)
         }
         {loggedInUser && (
-          
+          <>
+          <button className="navbar-logout" onClick={handleLogout}>Logout</button>
           <Link className="navbar-carrito" to={"/cart"}>🛒</Link>
+          </>
         )}
       </nav>
     </section>

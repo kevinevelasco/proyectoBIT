@@ -18,6 +18,14 @@
   margin: 0;
 }
 
+.navbar-logo a:focus,
+.navbar-logo a:active,
+.navbar-logo a:hover {
+  color: snow;
+}
+
+
+
 .navbar-menu {
   list-style: none;
   display: flex;
@@ -46,10 +54,21 @@
 
 .submenu li {
   margin-bottom: 5px;
+
 }
 
 .navbar-menu li:hover .submenu {
   display: block;
+  z-index: 9999;
+  list-style-type: none;
+}
+
+.navbar-menu li ul.submenu li:hover {
+  background-color: snow; /* Cambia el color de fondo al pasar el cursor por encima */
+}
+
+.navbar-menu li ul.submenu li a:hover {
+  color: black; /* Cambia el color del texto al pasar el cursor por encima */
 }
 
 .navbar-auth {
@@ -123,7 +142,7 @@
   font-size: 20px;
 }
 
-/* Estilos responsive */
+
 
 @media screen and (max-width: 768px) {
   .navbar {

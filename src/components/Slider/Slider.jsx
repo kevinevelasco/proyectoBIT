@@ -17,12 +17,12 @@ const Slider = () => {
       <section className='slider-container'>
         <img
           className={`slider-image ${currentSlide === 0 ? 'active' : ''}`}
-          src="/assets/slider1.png"
+          src="/assets/slider1.jpg"
           alt='Imagen 1'
         />
         <img
           className={`slider-image ${currentSlide === 1 ? 'active' : ''}`}
-          src="/assets/slider2.png"
+          src="/assets/slider3.jpg"
           alt='Imagen 2'
         />
         

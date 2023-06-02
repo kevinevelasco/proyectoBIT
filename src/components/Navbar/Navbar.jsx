@@ -22,13 +22,12 @@ const Navbar = () => {
       return;
     }
 
-    // Realizar la lógica de búsqueda aquí
     const filteredResults = data.filter((product) => {
       const searchQuery = searchValue.toLowerCase();
-      const propertiesToSearch = [product.nombre, product.genero, product.tipo, product.referencia]; // Agrega las propiedades adicionales que deseas buscar
+      const propertiesToSearch = [product.nombre, product.genero, product.tipo, product.referencia]; 
 
       for (let i = 0; i < propertiesToSearch.length; i++) {
-        const propertyValue = propertiesToSearch[i]; // No es necesario manejar el caso indefinido aquí
+        const propertyValue = propertiesToSearch[i]; //
 
         if (typeof propertyValue === 'string' && propertyValue.toLowerCase().includes(searchQuery)) {
           return true;
@@ -44,10 +43,8 @@ const Navbar = () => {
   };
 
   const handleLogout = () => {
-    // Actualizar la variable loggedInUser a false
     setLoggedInUser(false);
 
-    // Recargar la página para ir al inicio (home)
     navigate('/'); // Redirecciona a la página principal
   };
   return (

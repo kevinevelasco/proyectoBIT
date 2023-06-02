@@ -18,14 +18,13 @@ const CartContent = () => {
    
     <CartElements />;
     <CartTotal />;
-    <Footer/>
   </>  
   ): (
     <section>
       <Navbar/>
     
     <h2 className='cartEmptyMess'>No hay productos en el carrito</h2>
-    <Footer/>
+    
     </section>
   ) 
 };

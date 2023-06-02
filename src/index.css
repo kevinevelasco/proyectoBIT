@@ -9,7 +9,7 @@ font-family: 'Ubuntu', sans-serif;
 }
 
 footer {
-  position: relative;
+  position:inherit;
   margin-top: auto;
 }
 

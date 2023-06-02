@@ -57,7 +57,7 @@ const Login = () => {
       </form>
       <p>No tienes una cuenta? <Link className="navbar-register" to={"/registro"}>Registrate</Link></p> 
     </section>
-    <Footer/>
+    
    </main>
   );
 };

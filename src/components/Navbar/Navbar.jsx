@@ -3,12 +3,15 @@ import './Navbar.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { dataContext } from '../Context/DataContext';
 
+import TotalItems from '../CartContent/TotalItems';
+
 const Navbar = () => {
   const { data, loggedInUser, setLoggedInUser } = useContext(dataContext);
   const navigate = useNavigate();
   const [searchValue, setSearchValue] = useState('');
   const [searchResults, setSearchResults] = useState([]);
   const [selectedProduct, setSelectedProduct] = useState(null);
+  const { cart } = useContext (dataContext);
 
   const handleProductClick = (product) => {
     setSelectedProduct(product);
@@ -109,7 +112,10 @@ const Navbar = () => {
         {loggedInUser && (
           <>
             <button className="navbar-logout" onClick={handleLogout}>Logout</button>
-            <Link className="navbar-carrito" to={"/cart"}>🛒</Link>
+            <Link className="navbar-carrito" to={"/cart"}>
+              🛒
+              {cart.length > 0 ? <TotalItems/> : null};
+            </Link>
           </>
         )}
       </nav>

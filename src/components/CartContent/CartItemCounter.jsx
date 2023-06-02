@@ -14,7 +14,7 @@ const CartItemCounter = ({ producto }) => {
     <>
     <p className='counterButton' onClick={decrese}> - </p>
     <p> {producto.cantidad} </p>
-    <p className='counterButton' onClick={() => buyProducts(producto)}> + </p>
+    <p className='counterButtonPlus' onClick={() => buyProducts(producto)}> + </p>
     </>
   )
 }

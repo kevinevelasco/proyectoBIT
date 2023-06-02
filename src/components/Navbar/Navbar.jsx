@@ -1,16 +1,52 @@
-import React from 'react';
+import React, { useState, useContext } from 'react';
 import './Navbar.css';
 import { Link, useNavigate } from 'react-router-dom';
-import { useContext } from 'react';
 import { dataContext } from '../Context/DataContext';
 
 const Navbar = () => {
-  const { loggedInUser, setLoggedInUser } = useContext(dataContext);
+  const { data, loggedInUser, setLoggedInUser } = useContext(dataContext);
   const navigate = useNavigate();
+  const [searchValue, setSearchValue] = useState('');
+  const [searchResults, setSearchResults] = useState([]);
+  const [selectedProduct, setSelectedProduct] = useState(null);
+
+  const handleProductClick = (product) => {
+    setSelectedProduct(product);
+  };
+
+  
+  const handleSearch = () => {
+    // Verificar si searchValue está vacío
+    if (!searchValue) {
+      setSearchResults([]);
+      return;
+    }
+
+    // Realizar la lógica de búsqueda aquí
+    const filteredResults = data.filter((product) => {
+      const searchQuery = searchValue.toLowerCase();
+      const propertiesToSearch = [product.nombre, product.genero, product.tipo, product.referencia]; // Agrega las propiedades adicionales que deseas buscar
+
+      for (let i = 0; i < propertiesToSearch.length; i++) {
+        const propertyValue = propertiesToSearch[i]; // No es necesario manejar el caso indefinido aquí
+
+        if (typeof propertyValue === 'string' && propertyValue.toLowerCase().includes(searchQuery)) {
+          return true;
+        }
+      }
+
+      return false;
+    });
+
+    // Actualizar el estado con los resultados de búsqueda
+    setSearchResults(filteredResults);
+    console.log(filteredResults);
+  };
+
   const handleLogout = () => {
     // Actualizar la variable loggedInUser a false
     setLoggedInUser(false);
-    
+
     // Recargar la página para ir al inicio (home)
     navigate('/'); // Redirecciona a la página principal
   };
@@ -54,15 +90,29 @@ const Navbar = () => {
               <Link className="navbar-register" to={"/registro"}>Registro</Link>
             </div>
             <div className="navbar-search">
-              <input type="text" placeholder="Buscar..." />
-              <button className="search-button">Buscar</button>
+              <input
+                type="text"
+                placeholder="Buscar..."
+                value={searchValue}
+                onChange={(e) => setSearchValue(e.target.value)}
+              />
+              <button className="search-button" onClick={handleSearch}>
+                Buscar
+              </button>
+              {searchResults.length > 0 && (
+                <ul className="search-results">
+                  {searchResults.map((product) => (
+                    <li key={product.id}>{product.nombre}</li>
+                  ))}
+                </ul>
+              )}
             </div>
           </>)
         }
         {loggedInUser && (
           <>
-          <button className="navbar-logout" onClick={handleLogout}>Logout</button>
-          <Link className="navbar-carrito" to={"/cart"}>🛒</Link>
+            <button className="navbar-logout" onClick={handleLogout}>Logout</button>
+            <Link className="navbar-carrito" to={"/cart"}>🛒</Link>
           </>
         )}
       </nav>

@@ -12,6 +12,7 @@
 
 .navbar a {
   text-decoration: none;
+  color:snow;
 }
 
 .navbar-logo {
@@ -32,6 +33,7 @@
   display: flex;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .navbar-menu li {
@@ -42,6 +44,7 @@
   color: #fff;
   text-decoration: none;
   padding: 10px;
+  max-width: 100%;
 }
 
 .submenu {
@@ -103,6 +106,13 @@
   border: none;
   padding: 5px 10px;
   margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.search-button:hover {
+  font-display: bold;
+  background-color: snow; 
+  color: black;
 }
 
 .search-results {
@@ -143,6 +153,14 @@
   font-size: 20px;
   cursor: pointer; 
   text-decoration: none;
+}
+
+.navbar-logout{
+  margin-bottom: 20px;
+}
+
+.navbar-logout:hover{
+  background-color: transparent;
 }
 
 

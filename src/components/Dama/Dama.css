@@ -42,6 +42,10 @@
   height: 283px;
 }
 
+h1{
+  text-align: center;
+}
+
 /* Responsiveness */
 @media (max-width: 768px) {
   .dama-section {

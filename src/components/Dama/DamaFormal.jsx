@@ -10,10 +10,6 @@ const DamaFormal = () => {
       <Navbar/>
       <h1>Productos Dama Formal</h1>
       <Products genero="Dama" tipo="Formal"></Products>
-      <h2>Productos de DamaFormal</h2>
-      
-      
-      
       </section>
   )
 }

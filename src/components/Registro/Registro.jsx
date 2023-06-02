@@ -114,7 +114,7 @@ const registerUser = (userData) => {
         </form>
         <p>¿Ya tienes una cuenta? <Link className="navbar-login" to={"/login"}>Login</Link></p> {/* Agrega el enlace de inicio de sesión */}
       </section>
-      <Footer />
+      
     </main>
   );
 };

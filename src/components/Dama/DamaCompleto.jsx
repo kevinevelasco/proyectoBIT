@@ -11,9 +11,9 @@ export const DamaCompleto = () => {
         <h1>Productos Dama Completos</h1>
       <Products genero="Dama" tipo="Deportivo"></Products>
       <Products genero="Dama" tipo="Formal"></Products>
-      <h2>Sección Dama</h2>
+      
       <Footer/>
-        DamaCompleto
+       
     </section>
   )
 }

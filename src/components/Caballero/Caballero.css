@@ -1,10 +1,15 @@
 .caballero-section {
   display: flex;
   align-items: flex-start;
-  margin-top: 10px;
-  margin-right: 60px;
-  margin-bottom: 10px;
-  margin-left: 60px;
+  justify-content: center;
+  margin-top: 10px; /* Márgen superior */
+  margin-right: 60px; /* Márgen derecho */
+  margin-bottom: 10px; /* Márgen inferior */
+  margin-left: 120px; /* Márgen izquierdo */
+}
+
+#caballero-section{
+  justify-content: center;
 }
 
 .caballero-section-2 {
@@ -20,7 +25,6 @@
 }
 
 .image-container img {
-  width: 100%;
   height: auto;
 }
 

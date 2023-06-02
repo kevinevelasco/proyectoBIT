@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Caballero = () => {
   return (
-    <main className="caballero-section">
+    <main className="caballero-section" id='caballero-section'>
       <section className='caballero-section-1'>
         <article className="image-container">
           <Link to="/caballero-completo">

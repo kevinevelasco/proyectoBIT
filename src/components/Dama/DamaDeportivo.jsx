@@ -11,7 +11,7 @@ const DamaDeportivo = () => {
       <h1>Productos Dama Deportivos</h1>
       <Products genero="Dama" tipo="Deportivo"></Products>
       <h2>Sección Dama</h2>
-      <Footer/>
+      
       
     </section>
   );

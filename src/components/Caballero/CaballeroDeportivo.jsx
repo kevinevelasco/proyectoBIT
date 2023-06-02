@@ -11,7 +11,7 @@ const CaballeroDeportivo = () => {
     
       <h1>Productos Caballero Deportivos</h1>
        <Products genero="Caballero" tipo="Deportivo"></Products>
-       <Footer/>
+       
     </section>
   )
 }

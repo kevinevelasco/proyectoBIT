@@ -12,7 +12,7 @@ const CaballeroFormal = () => {
     
       <h1>Productos Caballero Formal </h1>
        <Products genero="Caballero" tipo="Formal"></Products>
-       <Footer/>
+       
     </main>
     </section>
   )

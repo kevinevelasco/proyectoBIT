@@ -52,6 +52,7 @@ const Navbar = () => {
           </>)
         }
         {loggedInUser && (
+          
           <Link className="navbar-carrito" to={"/cart"}>🛒</Link>
         )}
       </nav>

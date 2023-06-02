@@ -11,10 +11,13 @@ const DataProvider = ({ children }) => {
 
   useEffect(() => {
     axios("data/data.json").then((res) => setData(res.data));
-    axios("data/users.json").then((res) => setUsersData(res.data));
-  }, []);
+    fetch('https://6478216f362560649a2d3d21.mockapi.io/api/users/users')
+      .then(response => response.json())
+      .then(data => setUsersData(data))
+      .catch(error => console.error('Error al obtener los datos de la API:', error));
+  }, []);   
 
-  return <dataContext.Provider value={{ data, usersData, loggedInUser, setLoggedInUser, cart, setCart }}>{children}</dataContext.Provider>;
+  return <dataContext.Provider value={{ data, usersData, setUsersData, loggedInUser, setLoggedInUser, cart, setCart }}>{children}</dataContext.Provider>;
 };
 
 export default DataProvider;

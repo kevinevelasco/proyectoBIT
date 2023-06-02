@@ -13,7 +13,6 @@ const Login = () => {
   
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí puedes realizar la lógica para iniciar sesión con los datos proporcionados
     const user = usersData.find((user) => user.correo === email && user.contra === password);
 
     if (user) {

@@ -114,7 +114,7 @@ const Navbar = () => {
             <button className="navbar-logout" onClick={handleLogout}>Logout</button>
             <Link className="navbar-carrito" to={"/cart"}>
               🛒
-              {cart.length > 0 ? <TotalItems/> : null};
+              {cart.length > 0 ? <TotalItems/> : null}
             </Link>
           </>
         )}

@@ -16,8 +16,8 @@ const CartContent = () => {
     <>
     <Navbar/>
    
-    <CartElements />;
-    <CartTotal />;
+    <CartElements />
+    <CartTotal />
   </>  
   ): (
     <section>
